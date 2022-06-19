@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(237, 214, 214);
+    /* margin: 50px 20px; */
+}
+
+.countries {
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+}
+
+.country {
+    border: 3px solid rgb(84, 26, 26);
+    background-color: rgb(247, 188, 188);
+    color: rgb(84, 26, 26);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.country img {
+    width: 200px;
+}
