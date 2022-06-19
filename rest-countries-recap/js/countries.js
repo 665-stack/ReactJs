@@ -3,23 +3,52 @@ const loadCountries = () => {
         .then(res => res.json())
         .then(data => displayCountries(data))
 }
+
 const displayCountries = countries => {
-    console.log(countries);
+    console.log(countries[0]);
     const CountriesHtml = countries.map(country => getCountriesHtml(country));
-    console.log(CountriesHtml[2]);
     const container = document.getElementById('countries');
     container.innerHTML = CountriesHtml;
 }
-const getCountriesHtml = country => {
+// option 2
+const getCountriesHtml = ({ name, flags, area }) => {
     return `
         <div class="country">
-           <h2>${country.name.common}</h2>
-           <img src="${country.flags.png}" alt="">
+           <h2>${name.common}</h2>
+           <p>${area}</p>
+           <img src="${flags.png}" alt="">
         </div>
 
     `
 }
-
-
 loadCountries();
+
+
+
+
+// === option 1 ====
+// const getCountriesHtml = country => {
+
+//     const { name, flags } = country;
+//     return `
+//         <div class="country">
+//            <h2>${name.common}</h2>
+//            <img src="${flags.png}" alt="">
+//         </div>
+
+//     `
+// }
+
+// === original ====
+// const getCountriesHtml = country => {
+//     return `
+//         <div class="country">
+//            <h2>${country.name.common}</h2>
+//            <img src="${country.flags.png}" alt="">
+//         </div>
+
+//     `
+// }
+
+
 
