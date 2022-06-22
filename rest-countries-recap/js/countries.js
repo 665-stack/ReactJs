@@ -5,17 +5,18 @@ const loadCountries = () => {
 }
 
 const displayCountries = countries => {
-    console.log(countries[0]);
+    // console.log(countries[0]);
     const CountriesHtml = countries.map(country => getCountriesHtml(country));
     const container = document.getElementById('countries');
     container.innerHTML = CountriesHtml;
 }
 // option 2
-const getCountriesHtml = ({ name, flags, area }) => {
+const getCountriesHtml = ({ name, flags, area, region }) => {
     return `
         <div class="country">
            <h2>${name.common}</h2>
-           <p>${area}</p>
+           <p>Area: ${area}</p>
+           <p>Region: ${region}</p>
            <img src="${flags.png}" alt="">
         </div>
 
@@ -51,4 +52,7 @@ loadCountries();
 // }
 
 
-
+//===========================
+let ul = `<li>Programming<li>`;
+ul += `<li>Hero<li>`;
+console.log(ul);
