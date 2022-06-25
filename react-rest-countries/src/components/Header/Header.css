@@ -1,0 +1,17 @@
+nav {
+    text-align: center;
+    padding: 15px 0px;
+    background-color: rgb(72, 54, 31);
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 50px;
+    color: white;
+}
+
+nav a:hover {
+    background-color: rgb(112, 90, 63);
+    padding: 15px 15px;
+}
