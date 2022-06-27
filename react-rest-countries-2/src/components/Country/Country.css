@@ -1,0 +1,13 @@
+.country {
+    background-color: rgb(135, 109, 75);
+    margin: 50px 20px 10px 20px;
+    padding: 30px 0px 10px 0px;
+    width: 350px;
+    min-height: 400px;
+    color: rgb(31, 18, 2);
+}
+
+.country img {
+    width: 70%;
+    height: auto
+}

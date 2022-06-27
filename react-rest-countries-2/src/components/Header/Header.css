@@ -1,0 +1,27 @@
+.navbar {
+    background-color: rgb(137, 111, 76);
+}
+
+.navbar-brand {
+    margin-left: 30px;
+    color: rgb(219, 191, 156);
+}
+
+.navbar-brand:hover {
+    color: rgb(219, 191, 156);
+}
+
+
+.navbar-nav {
+    margin-right: 50px;
+
+}
+
+.nav-item a {
+    color: rgb(219, 191, 156);
+}
+
+.nav-item a:hover {
+    background-color: rgb(94, 73, 46);
+    color: rgb(219, 191, 156);
+}
