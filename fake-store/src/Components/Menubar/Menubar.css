@@ -1,0 +1,16 @@
+body {}
+
+.container-Menu {
+    background-color: #28282B;
+    color: #c4c4ca;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+.menu-container {
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+}
