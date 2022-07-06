@@ -1,5 +1,4 @@
 import React from 'react';
-// import ReactModal from '../ReactModal/ReactModal';
 import './SingleProduct.css'
 const SingleProduct = (props) => {
 
