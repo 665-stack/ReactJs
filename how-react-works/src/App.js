@@ -1,6 +1,7 @@
 
 import './App.css';
 import Device from './components/Device/Device';
+
 import Watch from './components/watch/Watch';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Device name="iphone" price="90000"></Device>
       <Watch></Watch>
+
     </div>
   );
 }
