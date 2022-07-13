@@ -1,13 +1,15 @@
 import React from 'react';
+import { addToDataBase } from '../../Utilities/fakeData';
 import './Cosmetic.css'
+
+
 const Cosmetic = (props) => {
     const { name, price, id } = props.cosmetic;
     // how declare event handler with existing product
     const addToCart = (id) => {
-        console.log('ITem added', id);
+        addToDataBase(id);
     }
 
-    const addToCartWithParam = () => addToCart(id);
 
     return (
         <div className='product'>
@@ -15,9 +17,7 @@ const Cosmetic = (props) => {
             <p>Only for: {price}</p>
             <p><small>It has id: {id}</small></p>
 
-            <button onClick={addToCartWithParam} className='AddToCartBtn'>Add to cart</button>
-
-            <button onClick={() => addToCart(id)} className='AddToCartBtn'>Purchase</button>
+            <button onClick={() => addToCart(id)} className='AddToCartBtn'>Add to cart</button>
         </div>
     );
 };
