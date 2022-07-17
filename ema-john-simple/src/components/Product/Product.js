@@ -1,12 +1,23 @@
 import React from 'react';
 import './Product.css'
+// import cartIcon from '../../images/cart-plus-solid.svg'
 const Product = (props) => {
     console.log(props.product);
     const { img, name, price, seller, ratings } = props.product;
     return (
         <div className='product'>
             <img src={img} alt="" />
-            <h6 className='product-name'>{name}</h6>
+
+            <div className="product-details">
+                <p className='product-name'>{name}</p>
+                <p className='product-price'>Price: ${price}</p>
+                <p className='product-manufacturer'>Manufacturer: {seller}</p>
+                <p className='product-rating'>Rating: {ratings} start</p>
+
+            </div>
+            <button className='btn-cart'>
+                <p>Add to Cart</p>
+            </button>
         </div>
     );
 };
