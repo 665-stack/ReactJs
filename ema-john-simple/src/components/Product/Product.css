@@ -65,6 +65,9 @@
 }
 
 .btn-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     bottom: 0;
     background-color: #FFE0B3;
@@ -78,4 +81,8 @@
 
 .btn-cart:hover {
     background-color: #FF9900;
+}
+
+.btn-cart p {
+    margin-right: 5px;
 }
