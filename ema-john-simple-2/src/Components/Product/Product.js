@@ -6,11 +6,11 @@ const Product = (props) => {
     return (
         <div className='product'>
             <img src={img} alt="" />
-            <div>
+            <div className='product-details'>
                 <p className='product-name'>{name}</p>
-                <p>Price: {price}</p>
-                <p>Manufacturer: {seller}</p>
-                <p>Rating: {rating} star</p>
+                <p className='product-price'>Price: ${price}</p>
+                <p className='product-manufacturer'>Manufacturer: {seller}</p>
+                <p className='product-rating'>Rating: {rating} star</p>
             </div>
         </div>
     );

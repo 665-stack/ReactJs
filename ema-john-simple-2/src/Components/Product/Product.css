@@ -21,3 +21,34 @@
     border-radius: 8px;
     margin: 8px 7px 0px 7px;
 }
+
+.product-details {
+    margin: 12px 14px 13px 14px;
+}
+
+.product-name {
+    color: #0E161A;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.0015em;
+    margin: 0;
+}
+
+.product-price {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #0E161A;
+    margin: 0;
+    margin: 11px 0px 20px 0px;
+}
+
+.product-manufacturer {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.004em;
+    margin-top: 11px;
+    color: #2A414F;
+}

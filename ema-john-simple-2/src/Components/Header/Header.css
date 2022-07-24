@@ -1,3 +1,6 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -10,6 +13,7 @@
 }
 
 .header a {
+    font-family: 'Lato', sans-serif;
     color: white;
     text-decoration: none;
     font-weight: 400;
