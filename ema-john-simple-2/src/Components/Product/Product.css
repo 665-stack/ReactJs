@@ -79,7 +79,7 @@
 }
 
 .addToCart:hover {
-    background-color: #ff9900;
+    background-color: rgba(255, 153, 0, 0.3);
 }
 
 .addToCart p {
